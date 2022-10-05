@@ -14,7 +14,7 @@ export default function App() {
   //     })
 
   useEffect(() => {
-    console.log('hi') weird stuff
+    console.log('hi')
     if(contacts.length == 0){
       fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
