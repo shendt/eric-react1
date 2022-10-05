@@ -14,7 +14,7 @@ export default function App() {
   //     })
 
   useEffect(() => {
-    //console.log('hi') weird stuff
+    console.log('hi') weird stuff
     if(contacts.length == 0){
       fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
@@ -22,7 +22,7 @@ export default function App() {
         setContacts(data);
       })
     }
-  })
+  },[])
 
   return (
     <div className="container">
